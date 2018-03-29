@@ -5,6 +5,9 @@ A simple bash script to print the current track you're playing on spotify in a s
 - a mac running spotify
 - curl
 
+# Example
+![Example](example.png)
+
 # Usage
 
 1. place the script somewhere. It must be run on the mac running spotify
