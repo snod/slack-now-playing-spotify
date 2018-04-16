@@ -12,14 +12,16 @@ CONFIGFILE="slackspotify.cfg"
 
 # check if the config file exists
 
-if [[ ! -f "$CONFIGFILE" ]]; then
+LOCALDIR=`dirname $0`
+
+if [[ ! -f "$LOCALDIR/$CONFIGFILE" ]]; then
         echo "config file $CONFIGFILE could not be found"
         exit 1
 fi
 
 # load the config
 
-. "$CONFIGFILE"
+. "$LOCALDIR/$CONFIGFILE"
 
 # gather all data from spotify
 ARTIST=$(osascript -e 'tell application "Spotify" to artist of current track')
