@@ -16,7 +16,7 @@ A simple bash script to print the current track you're playing on spotify in a s
   - change the token
   - change the channel
   - *optional* change the color
-  - *bonus* set a footer icon url in the JSON part
+  - *bonus* set a footer icon url
 4. execute the script, if nothing happens remove the `> /dev/null` redirect to see the error
 
 I created an Alfred workflow to quickly execute the script.
